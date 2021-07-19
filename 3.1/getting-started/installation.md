@@ -54,3 +54,9 @@ php artisan vendor:publish --provider="Maatwebsite\Excel\ExcelServiceProvider" -
 ```
 
 This will create a new config file named `config/excel.php`.
+
+To publish the config in lumen, download this file (https://github.com/Maatwebsite/Laravel-Excel/blob/3.1/config/excel.php) at `config/excel.php` and add this line to `bootstrap/app.php`
+
+```
+$app->configure('excel');
+```
